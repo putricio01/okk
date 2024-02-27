@@ -1,8 +1,9 @@
 ﻿using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using Unity.Netcode;
 
-public class Ball : MonoBehaviour
+public class Ball : NetworkBehaviour
 {
     [SerializeField] [Range(10,80)] float randomSpeed = 40;
     [SerializeField] float initialForce = 400;

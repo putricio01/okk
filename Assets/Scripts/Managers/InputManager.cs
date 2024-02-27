@@ -2,13 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using Unity.Netcode;
 
 public class InputManager : MonoBehaviour
 {
     public float throttleInput, steerInput, yawInput, pitchInput, rollInput;
     public bool isBoost, isDrift, isAirRoll;
     public bool isJump, isJumpUp, isJumpDown;
-    /*void Update()
+    
+    void Update()
     {
         throttleInput = GetThrottle();
         steerInput = GetSteerInput();
@@ -24,7 +26,7 @@ public class InputManager : MonoBehaviour
         isBoost = Input.GetButton("RB") || Input.GetMouseButton(0);
         isDrift = Input.GetButton("LB") || Input.GetKey(KeyCode.LeftShift);
         isAirRoll = Input.GetButton("LB") || Input.GetKey(KeyCode.LeftShift);
-    }*/
+    }
 
     private static float GetRollInput()
     {

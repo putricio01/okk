@@ -1,10 +1,14 @@
 ﻿using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using Unity.Netcode;
 
 [RequireComponent(typeof(Rigidbody))]
-public class CubeController : MonoBehaviour
+public class CubeController : NetworkBehaviour
 {
+    [Header("score")]
+     public int score;
+     
     [Header("Car State")]
     public bool isAllWheelsSurface = false;
     public bool isCanDrive;
